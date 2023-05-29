@@ -1,6 +1,8 @@
 # responsi_prak_mobile_2023
 
-A new Flutter project.
+Nama    : Muhammad Rizqi
+NIM     : 123190083
+Plug    : A
 
 ## Getting Started
 
