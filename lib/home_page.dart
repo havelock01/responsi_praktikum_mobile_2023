@@ -21,6 +21,62 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
+              Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Container(
+                      width: 200,
+                      height: 30,
+                      margin: EdgeInsets.only(top: 100),
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        child: Text("TERBARU"),
+                        style: ElevatedButton.styleFrom(primary: Colors.red),
+                      ),
+                    ),
+                    Container(
+                      width: 200,
+                      height: 30,
+                      margin: EdgeInsets.only(left: 20, top: 100),
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        child: Text("NASIONAL"),
+                        style: ElevatedButton.styleFrom(primary: Colors.red),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Container(
+                      width: 200,
+                      height: 30,
+                      margin: EdgeInsets.only(top: 10),
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        child: Text("OLAHRAGA"),
+                        style: ElevatedButton.styleFrom(primary: Colors.red),
+                      ),
+                    ),
+                    Container(
+                      width: 200,
+                      height: 30,
+                      margin: EdgeInsets.only(left: 20, top: 10),
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        child: Text("TEKNOLOGI"),
+                        style: ElevatedButton.styleFrom(primary: Colors.red),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
