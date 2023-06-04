@@ -21,12 +21,6 @@ class DetailCategoryTerbaru extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            if (post.thumbnail != null)
-              Image.network(
-                post.thumbnail!,
-                height: 200,
-                fit: BoxFit.cover,
-              ),
             SizedBox(height: 16),
             Text(
               post.title ?? '',
@@ -43,6 +37,12 @@ class DetailCategoryTerbaru extends StatelessWidget {
                 color: Colors.grey,
               ),
             ),
+            if (post.thumbnail != null)
+              Image.network(
+                post.thumbnail!,
+                height: 200,
+                fit: BoxFit.cover,
+              ),
             SizedBox(height: 16),
             Text(
               post.description ?? '',
