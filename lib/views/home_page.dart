@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../views/category_terbaru.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -31,7 +32,14 @@ class HomePage extends StatelessWidget {
                       height: 30,
                       margin: EdgeInsets.only(top: 100),
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => CategoryTerbaru(),
+                            ),
+                          );
+                        },
                         child: Text("TERBARU"),
                         style: ElevatedButton.styleFrom(primary: Colors.red),
                       ),
