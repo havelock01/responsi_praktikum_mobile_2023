@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../apis/terbaru_data_source.dart';
 import '../models/list_news_model.dart';
+import 'detail_category_terbaru.dart';
 
 class CategoryTerbaru extends StatefulWidget {
   const CategoryTerbaru({Key? key}) : super(key: key);
@@ -30,7 +31,8 @@ class _CategoryTerbaruState extends State<CategoryTerbaru> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Terbaru'),
+        backgroundColor: Colors.red,
+        title: const Text('CNN Terbaru'),
       ),
       body: posts == null
           ? Center(
@@ -47,7 +49,14 @@ class _CategoryTerbaruState extends State<CategoryTerbaru> {
                       ? Image.network(post.thumbnail!)
                       : null,
                   onTap: () {
-                    // still empty
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => DetailCategoryTerbaru(
+                          post: post,
+                        ),
+                      ),
+                    );
                   },
                 );
               },
